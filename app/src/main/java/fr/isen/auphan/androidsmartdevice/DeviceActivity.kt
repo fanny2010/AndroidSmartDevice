@@ -53,6 +53,7 @@ class DeviceActivity : AppCompatActivity() {
                 binding.Led1.imageTintList = getColorStateList(R.color.black)
                 characteristic?.value = byteArrayOf(0x00)
                 bluetoothGatt?.writeCharacteristic(characteristic)
+                Toast.makeText(this, "La Led 1 est activée", Toast.LENGTH_LONG).show()
             } else{
                 binding.Led1.imageTintList = getColorStateList(R.color.teal_200)
                 binding.Led2.imageTintList = getColorStateList(R.color.black)
@@ -69,6 +70,7 @@ class DeviceActivity : AppCompatActivity() {
                 binding.Led2.imageTintList = getColorStateList(R.color.black)
                 characteristic?.value = byteArrayOf(0x00)
                 bluetoothGatt?.writeCharacteristic(characteristic)
+                Toast.makeText(this, "La Led 2 est activée", Toast.LENGTH_LONG).show()
             } else{
                 binding.Led2.imageTintList = getColorStateList(R.color.teal_200)
                 binding.Led1.imageTintList = getColorStateList(R.color.black)
@@ -84,6 +86,7 @@ class DeviceActivity : AppCompatActivity() {
                 binding.Led3.imageTintList = getColorStateList(R.color.black)
                 characteristic?.value = byteArrayOf(0x00)
                 bluetoothGatt?.writeCharacteristic(characteristic)
+                Toast.makeText(this, "La Led 3 est activée", Toast.LENGTH_LONG).show()
             } else{
                 binding.Led3.imageTintList = getColorStateList(R.color.teal_200)
                 binding.Led1.imageTintList = getColorStateList(R.color.black)
